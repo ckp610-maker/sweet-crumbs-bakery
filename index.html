@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sweet Crumbs | Artisan Bakery</title>
+  <meta name="description" content="Discover handcrafted cakes, pastries and artisan treats at Sweet Crumbs Bakery.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-mark">SC</span>
+      <span>Sweet Crumbs<small>ARTISAN BAKERY</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#contact" class="nav-cta">Enquire Now ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">HANDCRAFTED WITH LOVE</p>
+        <h1>A little sweetness.<br>A lot of <em>love.</em></h1>
+        <p class="hero-description">
+          Thoughtfully crafted cakes and delicate treats,
+          made to turn life's little moments into lasting memories.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="button button-dark">Explore Our Menu ↗</a>
+          <a href="#story" class="text-link">Our story</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-star">✳</span>
+          Baked fresh. Made with care.
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85"
+          alt="Beautiful celebration cake with chocolate decoration">
+        <div class="image-caption">
+          <span>THE ART OF BAKING</span>
+          <span>01 / 03</span>
+        </div>
+        <div class="floating-seal">MADE<br>WITH<br>♡ LOVE</div>
+      </div>
+    </section>
+
+    <!-- Brand values -->
+    <section class="values">
+      <div><span>✳</span> Freshly Baked</div>
+      <div><span>✳</span> Quality Ingredients</div>
+      <div><span>✳</span> Made With Love</div>
+      <div><span>✳</span> Every Detail Matters</div>
+    </section>
+
+    <!-- Story -->
+    <section class="story section-padding" id="story">
+      <div class="story-image">
+        <img
+          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+          alt="Freshly baked artisan pastries">
+      </div>
+
+      <div class="story-content">
+        <p class="eyebrow">A BAKERY WITH HEART</p>
+        <h2>Simple ingredients.<br><em>Extraordinary moments.</em></h2>
+        <p>
+          We believe the best memories are made around the table.
+          From celebration cakes to your everyday little treats,
+          every creation is inspired by warmth, care and the joy of sharing.
+        </p>
+        <a href="#menu" class="text-link">Discover our creations ↗</a>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A TASTE OF SOMETHING SPECIAL</p>
+          <h2>Our <em>favourites.</em></h2>
+        </div>
+        <p>Little indulgences, made for<br>your sweetest moments.</p>
+      </div>
+
+      <div class="filters" aria-label="Filter bakery products">
+        <button class="filter-btn active" data-filter="all">All treats</button>
+        <button class="filter-btn" data-filter="cakes">Cakes</button>
+        <button class="filter-btn" data-filter="pastries">Pastries</button>
+        <button class="filter-btn" data-filter="cookies">Cookies</button>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card" data-category="cakes">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+              alt="Chocolate celebration cake" loading="lazy">
+            <span class="product-tag">BESTSELLER</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Chocolate Dream</h3><p>Rich, silky chocolate layers</p></div>
+            <span class="price">₹799</span>
+          </div>
+          <button class="order-btn" data-product="Chocolate Dream">Enquire to Order ↗</button>
+        </article>
+
+        <article class="product-card" data-category="cakes">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+              alt="Strawberry cake with fresh berries" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div><h3>Berry Blush</h3><p>Strawberries and cream</p></div>
+            <span class="price">₹899</span>
+          </div>
+          <button class="order-btn" data-product="Berry Blush">Enquire to Order ↗</button>
+        </article>
+
+        <article class="product-card" data-category="pastries">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+              alt="Golden artisan croissants" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div><h3>Butter Croissants</h3><p>Flaky, golden and buttery</p></div>
+            <span class="price">₹149</span>
+          </div>
+          <button class="order-btn" data-product="Butter Croissants">Enquire to Order ↗</button>
+        </article>
+
+        <article class="product-card" data-category="cookies">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80"
+              alt="Freshly baked chocolate chip cookies" loading="lazy">
+            <span class="product-tag">A LITTLE JOY</span>
+          </div>
+          <div class="product-info">
+            <div><h3>Choco Chip Cookies</h3><p>Golden edges, soft centres</p></div>
+            <span class="price">₹249</span>
+          </div>
+          <button class="order-btn" data-product="Choco Chip Cookies">Enquire to Order ↗</button>
+        </article>
+
+      </div>
+      <p class="demo-note">Portfolio demonstration · Products, prices and business details are illustrative.</p>
+    </section>
+
+    <!-- Contact call to action -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <p class="eyebrow">SOMETHING TO CELEBRATE?</p>
+        <h2>Let's make it <em>sweet.</em></h2>
+        <p>Have a celebration in mind? Tell us what you're dreaming of.</p>
+        <button class="button button-light" id="customOrder">
+          Enquire About Your Order ↗
+        </button>
+        <p class="contact-small">Custom cakes · Special occasions · Sweet little surprises</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo footer-logo">
+      <span class="logo-mark">SC</span>
+      <span>Sweet Crumbs<small>ARTISAN BAKERY</small></span>
+    </a>
+    <p>A little sweetness goes a long way.</p>
+    <span class="copyright">© <span id="year"></span> Sweet Crumbs · Fictional portfolio demo</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
